@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+/* Estilos generales */
+:root{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 95vw;
+    min-height: 100vh;
+    min-width: 850px;
+    margin: 0 auto;
+    font: 18px / 1.5em 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+}
+
+header{
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 125px;
+    font-weight: 300;
+    background-color: rgb(240, 230, 223);
+}
+
+/* Navegación */
+nav ul{
+    text-align: center;
+    font-weight: 400;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 1em;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0.2em;
+    color: rgb(51, 51, 51);
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+ h2{
+    margin: 1em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3{
+    margin: 0.5em;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section{
+    width: 100%;
+    height: 55vh;
+    margin: 20px auto;
+    background-color: rgb(56, 144, 155);
+    color: rgb(255, 255, 255);
+}
+
+section:last-of-type{
+    background-color: transparent;
+}
+
+div, figure{
+    width: 50%;
+    height: 100%;
+}
+
+div p,
+div h3{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0.5em;
+    text-shadow: 1px 1px 1px rgb(51, 51, 51);
+}
+
+div h3{
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px rgb(51, 51, 51);
+    margin-top: 10%;
+}
+
+div h3+p{
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+div h2{
+    font-size: 1.5em;
+    text-align: left;
+}
+
+section:nth-of-type(odd) div, section:nth-of-type(even) figure{
+    float: left;
+}
+
+section:nth-of-type(even) div, section:nth-of-type(odd) figure{
+    float: right;
+}
+
+#trabajos+section>div{
+    float: none;
+    width: 95%;
+    height: 75%;
+    margin: auto auto;
+    & p{
+        width: 100%;
+    }
+}
+
+#trabajos+section{
+    position: relative;
+    padding: 1em;
+}
+
+#trabajos,
+#cafe{
+    color: transparent;
+    font-size: 1em;
+}
+
+#boton{
+    max-width: 260px;
+    height: 60px;
+    background-color: rgb(240, 230, 223);
+    text-align: center;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    padding: 15px 10px;
+    & a{
+        text-decoration: none;
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        text-shadow: none;
+    }
+    & a:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Imágenes */
+#intro{
+    background-image: url('../img/library.jpg');
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#cafeteria{
+    background-image: url('../img/cafeteria-libreria.jpg');
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+#intro>p,
+#cafeteria>p{
+    position: relative;
+    left: 0;
+    top: 94%;
+    & small{
+        background-color: rgba(51, 51, 51, 0.9);
+        padding: 0.2em 1em;
+    }
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#intro div:last-child,
+#cafeteria div:last-child{
+    width: 50%;
+    height: 30vh;
+    background-color: rgba(51, 51, 51, 0.6);
+    & p{
+        margin: 0.5em;
+        padding: 0;
+    }
+    & h2, p{
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption{
+    position: relative;
+    bottom: 35px;
+    background-color: rgb(51, 51, 51, 0.9);
+    color: white;
+    & a{
+        color: white;
+        text-decoration: none;
+        padding-left: 1em;
+    }
+}
+
+/* Vídeo */
+#video{
+    background-color: transparent;
+    padding: 1% 25%;
+    & h2 {
+        margin: 0em;
+    }
+    & iframe{
+        width: 840px;
+        height: 472px;
+        border: none;
+        margin: 0;
+        
+    }
+}
+
+
+/* Mapa */
+#mapa{
+    width: 100%;
+}
+
+iframe{
+    height: 40vh;
+    width: 100%;
+    margin: 7.5vh 0;
+}
+
+/* Pie de la página */
+footer{
+    width: 100%;
+    height: 30vh;
+    color: rgb(51, 51, 51);
+    background-color: rgb(240, 230, 223);
+    margin: 0 auto;
+    padding: 1.5em 3em;
+    & div{
+        width: 80%;
+    }
+    & p{
+        margin: 0;
+        display: inline-block;
+        & small{
+            font-weight: bold;
+        }
+    }
+}
+
+footer>p{
+    font-size: 1.2em;
+}
+
+footer div p{
+    display: inline-block;
+    text-align: right;
+    width: 90vw;
+    padding: 0;
+    text-shadow: none;
+}
+
+/* Formulario */
+form ul li{
+    list-style: none;
+    margin: 1em;
+}
+
+label{
+    display: none;
+}
+
+input,
+select,
+textarea{
+    width: 70vw;
+    padding: 1em;
+}
+
+form{
+    margin-bottom: 4em;
+}
+
+fieldset{
+    text-align: center;
+    margin-bottom: 1em;
+    border: none;
+}
+
+legend{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+}
+
+div{
+    padding-left: 0.5em;
+}
+
+form>div{
+    text-align: center;
+    width: 95vw;
+    padding: auto;
+    
+}
+
+div input{
+    width: 15vw;
+    height: 7vh;
+    font-size: 18px;
+    margin: 0 2em;
+}
+
+
+#archivo{
+    font-size: 18px;
+}

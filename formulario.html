@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+       <!-- Google fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+   
+       <!-- Estilos -->
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabecera del documento -->
+    <header>
+        <!-- Logo -->
+        <p>Editoline</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <!-- <li>Quienes somos</li>
+            <li>Nuestros autores</li>
+            <li>Envío de artes / manuscitos</li>
+            <li>Cafeteria</li>
+            <li>Donde encontrarnos</li> -->
+        </ul>
+    </nav>
+    <!-- Declaracion de formulario -->
+    <form action="#" method="post" name="formulario-basico" id="formulario-basico" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Formulario de envio de obras literarias</legend>
+
+            <ul>
+                <li>
+                    <!-- Etiqueta para identificar una entrada de datos -->
+                    <label for="nombre">Nombre y Apellidos</label>
+                    <!-- Entrada de tipo texto -->
+                    <input type="text" name="nombre" id="nombre" required value="" placeholder="Nombre y Apellidos">
+                </li>
+
+                <li>
+                    <!-- Entrada tipo email -->
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" name="correo" id="correo" required placeholder="Correo Electrónico">
+                </li>
+
+                <li>
+                    <!-- Entrada de tipo teléfono -->
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono: xxx-xxx-xxx">
+                </li>
+
+                <li>
+                    <!-- Entrada desplegable -->
+                    <label for="tematica">Indica el tipo de obra</label>
+                    <select name="tematica" id="tematica">
+                        <option value="" selected disabled>Indica el tipo de la obra</option>
+                        <option value="1">Novela de terror</option>
+                        <option value="2">Novela romántica</option>
+                        <option value="3">Novela de misterio</option>
+                        <option value="4">Novela histórica</option>
+                        <option value="5">Novela de ciencia ficción</option>
+                        <option value="6">Novela de fantasía</option>
+                        <option value="7">Novela gráfica</option>
+                        <option value="7">Comic manga</option>
+                        <option value="7">Otros</option>
+                    </select>
+                </li>
+        
+                <li>
+                    <!-- Entrada de tipo de introducción de datos -->
+                    <label for="comentario">Danos una breve descripcion de tu obra</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="120" placeholder="Danos una breve descripcion de tu obra"></textarea>
+                </li>
+        
+                <li>
+                    <!-- Entrada de archivo adjunto -->
+                    <label for="archivo">Adjuntar archivo</label>
+                    <input type="file" name="archivo" id="archivo" multiple accept=".pdf">
+                </li>
+            </ul>
+        </fieldset>
+
+        <!-- Botones de envio y borrado -->
+        <div>            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar Datos">
+        </div>
+    </form>
+
+    <footer>
+        <p><small>&copy; Sonia Pérez Cobo & Andrea Réthy, CIFO - La Violeta</small></p>
+        <div>
+            <p><strong>Donde encontrarnos</strong></p>
+            <p>Dirección: Plaça del Comte de Sert, 25, 08035 Barcelona</p>
+            <p>Horario: L-V: 8:00 - 20:00</p>
+
+            <p><strong>¿Quieres contactar con nosotros?</strong></p>
+            <p>Si quieres más información sobre nuestros servicios y productos, no dudes en contactarnos</p>
+            <p>Teléfono: 932 54 17 00</p>
+            <p>E-Mail: info@editoline.cat</p>
+        </div>
+    </footer>
+
+</body>
+</html>
