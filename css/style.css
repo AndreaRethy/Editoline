@@ -193,6 +193,7 @@ section:nth-of-type(even) div, section:nth-of-type(odd) figure{
 #intro div:last-child,
 #cafeteria div:last-child{
     display: flex;
+    flex-direction: column;
     width: 50%;
     /* height: 30vh; */
     background-color: rgba(51, 51, 51, 0.8);
